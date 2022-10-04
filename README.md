@@ -17,3 +17,9 @@
 update dates and projects codes in all of the specs. This should be allow user to run any time they want.
 
 2. Generate a update table with the following information: 1. if the specs are applicable or not. 2. generate the spec number for bid form.
+
+
+Plan for Ocotber 5th"
+
+1. testing on all words doc, find what word doc is not applicable.
+2. identify the word issues.
