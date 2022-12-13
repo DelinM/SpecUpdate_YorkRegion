@@ -1,17 +1,16 @@
 from docx import Document
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 from docx.oxml import OxmlElement, ns
+from docx.shared import Pt
 
 
 def create_element(name):
     # supporting function adding page
-
     return OxmlElement(name)
 
 
 def create_attribute(element, name, value):
     # supporting function adding page
-
     element.set(ns.qn(name), value)
 
 
@@ -41,7 +40,7 @@ def add_page_number_odd(paragraph, date):
 
     instrText = create_element('w:instrText')
     create_attribute(instrText, 'xml:space', 'preserve')
-    instrText.text = "PAGE"
+    instrText.text = "Page"
 
     fldChar2 = create_element('w:fldChar')
     create_attribute(fldChar2, 'w:fldCharType', 'end')
@@ -70,7 +69,7 @@ def add_page_number_even(paragraph, date):
 
     instrText = create_element('w:instrText')
     create_attribute(instrText, 'xml:space', 'preserve')
-    instrText.text = "PAGE"
+    instrText.text = "Page"
 
     fldChar2 = create_element('w:fldChar')
     create_attribute(fldChar2, 'w:fldCharType', 'end')
@@ -87,23 +86,67 @@ def add_page_number_even(paragraph, date):
     of_run._r.append(t2)
 
 
-def update_oddHeader(section, contractNo, dateInfo):
+def update_oddpage_contractno(section, contractNo):
     header = section.header
+
     # odd page - update contract number
-    stringList = header.paragraphs[0].text.split("\t")
-    header.paragraphs[0].text = header.paragraphs[0].text.replace(stringList[0], f"CONTRACT NO. {contractNo}")
+    if len(header.paragraphs) > 0:
+        for i in range(0, len(header.paragraphs)):
+            if "contract" in header.paragraphs[i].text.lower():
+                stringList = header.paragraphs[i].text.split("\t")
+                for n in range (0, len(stringList)):
+                    if "contract" in stringList[n].lower():
+                        header.paragraphs[i].text = header.paragraphs[i].text.replace(stringList[n], f"CONTRACT NO. {contractNo}")
+                        return
 
-    # odd page - update date information
-    header.paragraphs[2].text = ""
 
-
-def update_evenHeader(section, contractNo):
+def update_evenpage_contractno(section, contractNo):
     header = section.even_page_header
+
     # even page - update contract number
-    stringList = header.paragraphs[0].text.split("\t")
-    header.paragraphs[0].text = header.paragraphs[0].text.replace(stringList[1],
+    if len(header.paragraphs) > 0:
+
+        for i in range(0, len(header.paragraphs)):
+            if "contract" in header.paragraphs[i].text.lower():
+                stringList = header.paragraphs[i].text.split("\t")
+                if len(stringList) > 0:
+                    for n in range (0, len(stringList)):
+                        if "contract" in stringList[n].lower():
+                            header.paragraphs[i].text = header.paragraphs[i].text.replace(stringList[n],
                                                                   f"CONTRACT NO. {contractNo}")
-    # even page - remove all content in the page paragraph
-    header.paragraphs[2].text = ""
+                            return
 
 
+def locate_oddpage_date(section):
+    paragraphs = section.header.paragraphs
+
+    for i in range(0, len(paragraphs)):
+        if "date" in paragraphs[i].text.lower():
+            paragraphs[i].text = ""
+            return i
+    return -1
+
+
+def locate_evenpage_date(section):
+    paragraphs = section.even_page_header.paragraphs
+
+    for i in range(0, len(paragraphs)):
+        if "date" in paragraphs[i].text.lower():
+            paragraphs[i].text = ""
+            return i
+    return -1
+
+
+def update_oddpage_format(section):
+    paragraphs = section.header.paragraphs
+    for paragraph in paragraphs:
+        for run in paragraph.runs:
+            run.font.name = "Calibri (Body)"
+            run.font.size = Pt(11)
+
+def update_evenpage_format(section):
+    paragraphs = section.even_page_header.paragraphs
+    for paragraph in paragraphs:
+        for run in paragraph.runs:
+            run.font.name = "Calibri (Body)"
+            run.font.size = Pt(11)

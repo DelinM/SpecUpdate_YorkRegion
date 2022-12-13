@@ -24,3 +24,10 @@ def getWordNames(filepath):
         word_files = [f for f in files if re.search(r'.docx$', f, flags=re.IGNORECASE)]
         word_dic[path] = word_files
     return word_dic
+
+
+def checkResultPath(path):
+    if not os.path.exists(path):
+        # create directory
+        os.makedirs(path)
+    return path
