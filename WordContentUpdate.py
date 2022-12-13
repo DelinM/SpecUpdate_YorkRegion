@@ -107,26 +107,3 @@ def update_evenHeader(section, contractNo):
     header.paragraphs[2].text = ""
 
 
-def update_wordInfo(wordPath, contractNo, date):
-    file = open(wordPath, 'rb')
-    document = Document(file)
-
-    section = document.sections[0]
-
-    # update odd page header
-    update_oddHeader(section, contractNo, date)
-    add_page_number_odd(section.header.paragraphs[2], date)
-
-    # update even page header
-    update_evenHeader(section, contractNo)
-    add_page_number_even(section.even_page_header.paragraphs[2], date)
-
-    document.save("your_doc.docx")
-    file.close()
-
-
-wordPath = 'C:/Users/PC/Desktop/Spec/example/02511 Watermains.docx'
-contractNo = "SSTR4559"
-date = "Oct., 2022"
-
-update_wordInfo(wordPath, contractNo, date)
