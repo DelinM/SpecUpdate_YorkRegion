@@ -104,10 +104,8 @@ def update_evenpage_contractno(section, contractNo):
     header = section.even_page_header
 
     # even page - update contract number
-    print(len(header.paragraphs))
     if len(header.paragraphs) > 0:
         for i in range(0, len(header.paragraphs)):
-            print(header.paragraphs[i].text)
             if "contr" in header.paragraphs[i].text.lower():
                 stringList = header.paragraphs[i].text.split("\t")
                 if len(stringList) > 0:

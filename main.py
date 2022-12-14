@@ -17,5 +17,4 @@ def updateSpec(spec_path, contractNo, date):
         for value in values:
             path = key + value
             name = folder + value
-            print(name)
             wTools.update_wordInfo(path, contractNo, date, name)
