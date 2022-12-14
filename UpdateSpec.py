@@ -18,4 +18,3 @@ def updateSpec(spec_path, contractNo, date):
             path = key + value
             name = folder + value
             wTools.update_wordInfo(path, contractNo, date, name)
-dsad
