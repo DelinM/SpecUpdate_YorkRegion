@@ -1,3 +1,33 @@
 files to check:
+Div1
 1. 01250 Substitutions: manual check, if even page has date!
-2.
+2. 01550 Traffic Control: manual check, if even page has good format
+3. 01820D Training Evaluation Form: manual check, formatting header
+
+Div2
+1. 02389 Preservation of Water Courses: manual check even page
+2. 02555: manual check, only first page need to revise due to formmating issue (no odd even page)
+3. 02725: manual check, only first page need to revise due to formmating issue (no odd even page)
+
+Div4
+1. 04220: manual check, only first page need to revise due to formmating issue (no odd even page)
+
+Div7
+1. 07160: manual check, only first page need to revise due to formmating issue (no odd even page)
+
+
+Div9
+1. 09900: manual check, only first page need to revise due to formmating issue (no odd even page)
+
+Div13
+1. 13110: manual check, only first page need to revise due to formmating issue (no odd even page)
+2. 13295: manual check, only first page need to revise due to formmating issue (no odd even page)
+
+Div 14
+1. 14620-01: manual check, second page need to revise due to formmating issue (no odd even page)
+1. 14630-01: manual check, second page need to revise due to formmating issue (no odd even page)
+
+Div 16
+1. 16051: manual check, general formatting
+2. 16132: manual check, general formatting
+3. 16412: manual check, general formmating

@@ -92,10 +92,10 @@ def update_oddpage_contractno(section, contractNo):
     # odd page - update contract number
     if len(header.paragraphs) > 0:
         for i in range(0, len(header.paragraphs)):
-            if "contract" in header.paragraphs[i].text.lower():
+            if "contr" in header.paragraphs[i].text.lower():
                 stringList = header.paragraphs[i].text.split("\t")
                 for n in range (0, len(stringList)):
-                    if "contract" in stringList[n].lower():
+                    if "cont" in stringList[n].lower():
                         header.paragraphs[i].text = header.paragraphs[i].text.replace(stringList[n], f"CONTRACT NO. {contractNo}")
                         return
 
@@ -104,14 +104,15 @@ def update_evenpage_contractno(section, contractNo):
     header = section.even_page_header
 
     # even page - update contract number
+    print(len(header.paragraphs))
     if len(header.paragraphs) > 0:
-
         for i in range(0, len(header.paragraphs)):
-            if "contract" in header.paragraphs[i].text.lower():
+            print(header.paragraphs[i].text)
+            if "contr" in header.paragraphs[i].text.lower():
                 stringList = header.paragraphs[i].text.split("\t")
                 if len(stringList) > 0:
                     for n in range (0, len(stringList)):
-                        if "contract" in stringList[n].lower():
+                        if "contr" in stringList[n].lower():
                             header.paragraphs[i].text = header.paragraphs[i].text.replace(stringList[n],
                                                                   f"CONTRACT NO. {contractNo}")
                             return
