@@ -1,0 +1,17 @@
+Spec_dic = {1: "General Requirements",
+            2: "Site Works",
+            3: "Concrete",
+            4: "Masonry",
+            5: "Metals",
+            6: "Wood and Plastics",
+            7: "Thermal and Moisture Protection",
+            8: "Doors and Windows",
+            9: "Finishes",
+            10: "Specialties",
+            11: "Equipment",
+            12: "Furnishings",
+            13: "SCADA and Instrumentation",
+            14: "Conveying Systems",
+            15: "Mechanical",
+            16: "Electrical"}
+
