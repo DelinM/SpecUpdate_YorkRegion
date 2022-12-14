@@ -5,7 +5,7 @@ __pycache__/
 *$py.class
 
 # folder
-Spec/
+Spec
 
 # C extensions
 *.so

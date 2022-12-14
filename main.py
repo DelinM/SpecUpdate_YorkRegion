@@ -1,21 +1,16 @@
-import os
+# This is a sample Python script.
 
-import SysTools as sysTools
-import WordTools as wTools
-
-spec_path = "/Users/delinmu/Documents/GitHub/ETO_Specification/Spec"
-contractNo = "SSTR4559"
-date = "Oct., 2022"
+# Press ⌃R to execute it or replace it with your code.
+# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def updateSpec(spec_path, contractNo, date):
-    folder_list = sysTools.getFolderNames(spec_path)
-    word_dic = sysTools.getWordNames(folder_list)
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
-    for key, values in word_dic.items():
-        folder = sysTools.checkResultPath("".join([key, 'Updated/']))
-        for value in values:
-            path = key + value
-            name = folder + value
-            print(name)
-            wTools.update_wordInfo(path, contractNo, date, name)
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
