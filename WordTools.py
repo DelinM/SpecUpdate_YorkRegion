@@ -39,3 +39,5 @@ def update_wordInfo(wordPath, contractNo, date, name):
 
     document.save(name)
     file.close()
+
+
