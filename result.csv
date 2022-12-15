@@ -1,0 +1,297 @@
+,DivisionNumber,DivisionName,SpecNumber,SpecName,YorkSpecVersion,ETOSpecVersion,BidFormInformation
+0,01,General Requirements,001000,General Requirements,York Region original Spec,Included in ETO Spec,Included but not measured separately
+1,01,General Requirements,001010,Summary of Work,York Region original Spec,Included in ETO Spec,Included but not measured separately
+2,01,General Requirements,001025,Measurement and Payment,York Region original Spec,Included in ETO Spec,Included but not measured separately
+3,01,General Requirements,001035,Amending and Supplementing Contract Documents,York Region original Spec,Included in ETO Spec,Included but not measured separately
+4,01,General Requirements,001040,Coordination,York Region original Spec,Included in ETO Spec,Included but not measured separately
+5,01,General Requirements,001060,Regulatory Requirements,York Region original Spec,Included in ETO Spec,Included but not measured separately
+6,01,General Requirements,001080,Process Equipment Location Tagging,York Region original Spec,Included in ETO Spec,A01.01
+7,01,General Requirements,01080A,PELT Labelling Schedule,York Region original Spec,Spec Not Included,Not Applicable
+8,01,General Requirements,001092,Abbreviations,York Region original Spec,Included in ETO Spec,Included but not measured separately
+9,01,General Requirements,001200,Project Meetings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+10,01,General Requirements,01200A,Pre-Construction Meeting Agenda Template,York Region original Spec,Included in ETO Spec,Included but not measured separately
+11,01,General Requirements,001250,Substitutions,York Region original Spec,Included in ETO Spec,Included but not measured separately
+12,01,General Requirements,001300,Submittals,York Region original Spec,Included in ETO Spec,Included but not measured separately
+13,01,General Requirements,001310,Construction Schedules,York Region original Spec,Included in ETO Spec,Included but not measured separately
+14,01,General Requirements,01310A,Facility Schedule Template,York Region original Spec,Spec Not Included,Not Applicable
+15,01,General Requirements,01310B,Linear Schedule Template,York Region original Spec,Spec Not Included,Not Applicable
+16,01,General Requirements,001351,Health and Safety,York Region original Spec,Included in ETO Spec,Included but not measured separately
+17,01,General Requirements,001400,Quality Control,York Region original Spec,Included in ETO Spec,Included but not measured separately
+18,01,General Requirements,001420,References,York Region original Spec,Included in ETO Spec,Included but not measured separately
+19,01,General Requirements,001425,Computerized Maintenance Management System Data Requirements,York Region original Spec,Included in ETO Spec,A01.02
+20,01,General Requirements,001430,Operation and Maintenance Data,York Region original Spec,Included in ETO Spec,A01.03
+21,01,General Requirements,001450,As-Built Drawings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+22,01,General Requirements,01450A,Declaration of Complete and Accurate As-Built Documentation,York Region original Spec,Included in ETO Spec,Included but not measured separately
+23,01,General Requirements,001501,Construction Sequencing,York Region original Spec,Included in ETO Spec,Included but not measured separately
+24,01,General Requirements,001505,Mobilization and Demobilization,York Region original Spec,Included in ETO Spec,A01.04
+25,01,General Requirements,001520,Field Office,York Region original Spec,Included in ETO Spec,Included but not measured separately
+26,01,General Requirements,001550,Traffic Control,York Region original Spec,Included in ETO Spec,A01.05
+27,01,General Requirements,001551,Portable Variable Message Signs,York Region original Spec,Included in ETO Spec,Included but not measured separately
+28,01,General Requirements,001561,Environmental Protection,York Region original Spec,Included in ETO Spec,Included but not measured separately
+29,01,General Requirements,001600,Material and Equipment,York Region original Spec,Included in ETO Spec,Included but not measured separately
+30,01,General Requirements,001640,Manufacturers Services,York Region original Spec,Included in ETO Spec,Included but not measured separately
+31,01,General Requirements,001710,Pre-Construction Structural Survey,York Region original Spec,Included in ETO Spec,Included but not measured separately
+32,01,General Requirements,001720,Preparation,York Region original Spec,Included in ETO Spec,Included but not measured separately
+33,01,General Requirements,001740,Cleaning,York Region original Spec,Included in ETO Spec,Included but not measured separately
+34,01,General Requirements,001741,Site Maintenance,York Region original Spec,Included in ETO Spec,Included but not measured separately
+35,01,General Requirements,001750,Disinfection and Testing of Water Retaining Structures and Process Piping,York Region original Spec,Included in ETO Spec,A01.06
+36,01,General Requirements,001760,Warranty Work,York Region original Spec,Included in ETO Spec,Included but not measured separately
+37,01,General Requirements,001770,Closeout Procedures,York Region original Spec,Included in ETO Spec,Included but not measured separately
+38,01,General Requirements,001780,Contract Closeout,York Region original Spec,Included in ETO Spec,Included but not measured separately
+39,01,General Requirements,001810,Equipment Testing and Facility Commissioning,York Region original Spec,Included in ETO Spec,A01.07
+40,01,General Requirements,01810A,Equipment Testing and Commissioning Forms,York Region original Spec,Spec Not Included,Not Applicable
+41,01,General Requirements,001820,Demonstration and Training,York Region original Spec,Included in ETO Spec,Included but not measured separately
+42,01,General Requirements,01820A,Summary of Training Requirements,York Region original Spec,Spec Not Included,Not Applicable
+43,01,General Requirements,01820B,Training Schedule,York Region original Spec,Spec Not Included,Not Applicable
+44,01,General Requirements,01820C,OJT Form (On the Job Training Form),York Region original Spec,Included in ETO Spec,Included but not measured separately
+45,01,General Requirements,01820D,Training Evaluation Form,York Region original Spec,Included in ETO Spec,Included but not measured separately
+46,02,Site Works,002230,Site Preparation For Pipelines Utilities And Associated Structures,York Region original Spec,Included in ETO Spec,Included but not measured separately
+47,02,Site Works,002232,Tree Pruning,York Region original Spec,Included in ETO Spec,A02.01
+48,02,Site Works,002240,Dewatering-General,York Region original Spec,Included in ETO Spec,A02.02
+49,02,Site Works,002241,Provide Water Control Plan Dewatering and Discharge Plan,York Region original Spec,Included in ETO Spec,A02.03
+50,02,Site Works,002242,Supply Install and Subsequently Remove Dewatering System,York Region original Spec,Included in ETO Spec,Included but not measured separately
+51,02,Site Works,002243,Operate and Maintain Dewatering System,York Region original Spec,Included in ETO Spec,A02.04
+52,02,Site Works,002244,Retain Specialty Contractor to Monitor Dewatering,York Region original Spec,Included in ETO Spec,A02.05
+53,02,Site Works,002245,Restoration Works Associated With Dewatering Activities,York Region original Spec,Included in ETO Spec,A02.06
+54,02,Site Works,002246,Bypass Pumping Or Fluming And Unwatering,York Region original Spec,Included in ETO Spec,Included but not measured separately
+55,02,Site Works,002260,Excavation Support Systems,York Region original Spec,Included in ETO Spec,Included but not measured separately
+56,02,Site Works,002261,Excavation Temporary Support Systems,York Region original Spec,Included in ETO Spec,Included but not measured separately
+57,02,Site Works,002300,Excavating and Backfilling - Structures,York Region original Spec,Included in ETO Spec,Included but not measured separately
+58,02,Site Works,002314,Tunnelling,York Region original Spec,Included in ETO Spec,Included but not measured separately
+59,02,Site Works,002315,"Trenching, Backfilling and Compacting",York Region original Spec,Included in ETO Spec,Included but not measured separately
+60,02,Site Works,002316,Rock Removal,York Region original Spec,Included in ETO Spec,Included but not measured separately
+61,02,Site Works,002317,Roadway Excavation Embankment and Compaction,York Region original Spec,Included in ETO Spec,Included but not measured separately
+62,02,Site Works,002362,Dust Control,York Region original Spec,Included in ETO Spec,A02.07
+63,02,Site Works,002389,Preservation of Water Courses,York Region original Spec,Included in ETO Spec,Included but not measured separately
+64,02,Site Works,002511,Watermains,York Region original Spec,Included in ETO Spec,A02.08
+65,02,Site Works,02511A,- Record of Watermain Installation and Connection,York Region original Spec,Spec Not Included,Not Applicable
+66,02,Site Works,002530,Sewerage,York Region original Spec,Included in ETO Spec,Included but not measured separately
+67,02,Site Works,002531,Sewage Forcemains,York Region original Spec,Included in ETO Spec,A02.09
+68,02,Site Works,002555,Cathodic Protection,York Region original Spec,Included in ETO Spec,Included but not measured separately
+69,02,Site Works,002631,"Maintenance Holes, Catch Basins, Ditch Inlets and Valve Chambers",York Region original Spec,Included in ETO Spec,Included but not measured separately
+70,02,Site Works,002701,Aggregates - General,York Region original Spec,Included in ETO Spec,Included but not measured separately
+71,02,Site Works,002720,Untreated Granular Subbase Base Surface And Shoulder,York Region original Spec,Included in ETO Spec,Included but not measured separately
+72,02,Site Works,002725,Hot Mix Asphalt,York Region original Spec,Included in ETO Spec,Included but not measured separately
+73,02,Site Works,002821,Chain Link Fences and Gates,York Region original Spec,Included in ETO Spec,Included but not measured separately
+74,02,Site Works,002822,Wire Fences and Gates,York Region original Spec,Included in ETO Spec,Included but not measured separately
+75,02,Site Works,002911,Topsoil and Finish Grading,York Region original Spec,Included in ETO Spec,Included but not measured separately
+76,02,Site Works,002922,Hydraulic Seeding,York Region original Spec,Included in ETO Spec,A02.10
+77,02,Site Works,002933,Sodding,York Region original Spec,Included in ETO Spec,A02.11
+78,02,Site Works,002934,Compost Seeding,York Region original Spec,Included in ETO Spec,A02.12
+79,02,Site Works,002935,Planting of Trees Shrubs and Ground Covers,York Region original Spec,Included in ETO Spec,A02.13
+80,02,Site Works,002936,Landscape Maintenance,York Region original Spec,Included in ETO Spec,Included but not measured separately
+81,02,Site Works,002959,CCTV Inspection of Gravity Sewers,York Region original Spec,Included in ETO Spec,A02.14
+82,03,Concrete,003100,Concrete Forms and Accessories,York Region original Spec,Included in ETO Spec,A03.01
+83,03,Concrete,003200,Concrete Reinforcement,York Region original Spec,Included in ETO Spec,A03.02
+84,03,Concrete,003300,Cast in Place Concrete,York Region original Spec,Included in ETO Spec,A03.03
+85,03,Concrete,003345,Concrete Curing and Finishing,York Region original Spec,Included in ETO Spec,A03.04
+86,03,Concrete,003410,Plant Precast Structural Concrete,York Region original Spec,Included in ETO Spec,Included but not measured separately
+87,04,Masonry,004051,Masonry Procedures,York Region original Spec,Included in ETO Spec,A04.01
+88,04,Masonry,004060,Mortar and Masonry Grout,York Region original Spec,Included in ETO Spec,A04.02
+89,04,Masonry,004080,Masonry Reinforcement and Connectors,York Region original Spec,Included in ETO Spec,A04.03
+90,04,Masonry,004090,Masonry Accessories,York Region original Spec,Included in ETO Spec,A04.04
+91,04,Masonry,004211,Brick Masonry,York Region original Spec,Included in ETO Spec,A04.05
+92,04,Masonry,004220,Concrete Masonry Units,York Region original Spec,Included in ETO Spec,A04.06
+93,05,Metals,005050,Welding,York Region original Spec,Included in ETO Spec,Included but not measured separately
+94,05,Metals,005120,Structural Steel,York Region original Spec,Included in ETO Spec,Included but not measured separately
+95,05,Metals,005500,_Metal_Fabrications_-_General,York Region original Spec,Included in ETO Spec,Included but not measured separately
+96,05,Metals,005501,Metal Fabrications - Architectural,York Region original Spec,Included in ETO Spec,Included but not measured separately
+97,05,Metals,005502,Metal Fabrications - Structural,York Region original Spec,Included in ETO Spec,Included but not measured separately
+98,05,Metals,005503,Metal Fabrications - Mechanical,York Region original Spec,Included in ETO Spec,Included but not measured separately
+99,05,Metals,005510,Metal Stairs,York Region original Spec,Included in ETO Spec,Included but not measured separately
+100,05,Metals,005512,Aluminum Handrails,York Region original Spec,Included in ETO Spec,Included but not measured separately
+101,05,Metals,005810,Expansion Joint Cover Assemblies,York Region original Spec,Included in ETO Spec,Included but not measured separately
+102,06,Wood and Plastics,006100,Rough Carpentry,York Region original Spec,Included in ETO Spec,A06.01
+103,06,Wood and Plastics,006200,Finish Carpentry,York Region original Spec,Included in ETO Spec,A06.02
+104,07,Thermal and Moisture Protection,007140,Hot-Applied Rubberized Asphalt Waterproofing,York Region original Spec,Included in ETO Spec,A07.01
+105,07,Thermal and Moisture Protection,007160,Capillary Waterproofing,York Region original Spec,Included in ETO Spec,A07.02
+106,07,Thermal and Moisture Protection,007200,Insulation,York Region original Spec,Included in ETO Spec,A07.03
+107,07,Thermal and Moisture Protection,007520,Modified Bituminous Membrane Roofing,York Region original Spec,Included in ETO Spec,A07.04
+108,07,Thermal and Moisture Protection,007570,Traffic Topping,York Region original Spec,Included in ETO Spec,A07.05
+109,07,Thermal and Moisture Protection,007610,Sheet Metal Roofing,York Region original Spec,Included in ETO Spec,A07.06
+110,07,Thermal and Moisture Protection,007620,Sheet Metal Flashing,York Region original Spec,Included in ETO Spec,A07.07
+111,07,Thermal and Moisture Protection,007700,Roof Specialities and Accessories,York Region original Spec,Included in ETO Spec,A07.08
+112,07,Thermal and Moisture Protection,007840,Firestopping,York Region original Spec,Included in ETO Spec,A07.09
+113,07,Thermal and Moisture Protection,007900,Joint Sealers,York Region original Spec,Included in ETO Spec,A07.10
+114,08,Doors and Windows,008110,Steel Doors and Frames,York Region original Spec,Included in ETO Spec,A08.01
+115,08,Doors and Windows,008331,Overhead Coiling Doors,York Region original Spec,Included in ETO Spec,A08.02
+116,08,Doors and Windows,008410,Aluminum Doors and Frames,York Region original Spec,Included in ETO Spec,A08.03
+117,08,Doors and Windows,008520,Windows,York Region original Spec,Included in ETO Spec,A08.04
+118,08,Doors and Windows,008710,Door Hardware,York Region original Spec,Included in ETO Spec,A08.05
+119,08,Doors and Windows,008800,Glazing,York Region original Spec,Included in ETO Spec,A08.06
+120,09,Finishes,009250,Gypsum Board,York Region original Spec,Included in ETO Spec,A09.01
+121,09,Finishes,009300,Ceramic Tiling,York Region original Spec,Included in ETO Spec,A09.02
+122,09,Finishes,009510,Acoustical Ceiling,York Region original Spec,Included in ETO Spec,A09.03
+123,09,Finishes,009522,Acoustical Treatment (Metal),York Region original Spec,Included in ETO Spec,A09.04
+124,09,Finishes,009650,Resilient Tile Flooring,York Region original Spec,Included in ETO Spec,A09.05
+125,09,Finishes,009850,Chemical Resistant Coatings,York Region original Spec,Included in ETO Spec,A09.06
+126,09,Finishes,009900,Painting And Protective Coatings,York Region original Spec,Included in ETO Spec,A09.07
+127,09,Finishes,009960,Painting of Steel Tanks and Appurtenances,York Region original Spec,Included in ETO Spec,A09.08
+128,10,Specialties,010200,Louvres and Vents,York Region original Spec,Included in ETO Spec,A10.01
+129,10,Specialties,010420,Fire Extinguishers and Safety Blankets,York Region original Spec,Included in ETO Spec,A10.02
+130,10,Specialties,010800,Toilet Accessories,York Region original Spec,Included in ETO Spec,Included but not measured separately
+131,10,Specialties,010999,Manufactured Specialties,York Region original Spec,Included in ETO Spec,A10.03
+132,11,Equipment,011010,Equipment General Requirements,York Region original Spec,Included in ETO Spec,A11.01
+133,11,Equipment,011240,Chemical Metering Pumps,York Region original Spec,Included in ETO Spec,A11.02
+134,11,Equipment,011280,Fabricated Sluice Gates,York Region original Spec,Included in ETO Spec,A11.03
+135,11,Equipment,011282,Fabricated Slide Gates and Stop Logs,York Region original Spec,Included in ETO Spec,A11.04
+136,11,Equipment,011300,Submersible Mixers,York Region original Spec,Included in ETO Spec,A11.05
+137,11,Equipment,011374,Aeration Centrifugal Blowers,York Region original Spec,Included in ETO Spec,A11.06
+138,11,Equipment,011376,Rotary Positive Displacement Blowers,York Region original Spec,Included in ETO Spec,A11.07
+139,11,Equipment,011377,Coarse Bubble Air Diffusers,York Region original Spec,Included in ETO Spec,A11.08
+140,11,Equipment,011378,Fine Bubble Air Diffusers,York Region original Spec,Included in ETO Spec,A11.09
+141,11,Equipment,011410,Submersible Well Pumps,York Region original Spec,Included in ETO Spec,A11.10
+142,11,Equipment,011421,Horizontal Split Case Pumps,York Region original Spec,Included in ETO Spec,A11.11
+143,11,Equipment,011422,Vertical Turbine Pumps,York Region original Spec,Included in ETO Spec,A11.12
+144,11,Equipment,011441,Submersible Sewage Pumps,York Region original Spec,Included in ETO Spec,A11.13
+145,11,Equipment,011530,Chemical Storage Tanks,York Region original Spec,Included in ETO Spec,A11.14
+146,11,Equipment,011540,Liquid Chemical Feed Systems,York Region original Spec,Included in ETO Spec,A11.15
+147,11,Equipment,011580,Activated Carbon Odour Control Systems,York Region original Spec,Included in ETO Spec,A11.16
+148,11,Equipment,011590,Automatic Composite Samplers,York Region original Spec,Included in ETO Spec,Included but not measured separately
+149,11,Equipment,011601,Tank Lining Systems,York Region original Spec,Included in ETO Spec,A11.17
+150,11,Equipment,011700,Elevated Water Storage Tank,York Region original Spec,Included in ETO Spec,A11.18
+151,11,Equipment,011710,Fiberglass Reinforced Plastic Tanks,York Region original Spec,Included in ETO Spec,A11.19
+152,11,Equipment,011900,Aboveground Fuel Oil Storage Tanks,York Region original Spec,Included in ETO Spec,A11.20
+153,11,Equipment,011905,Fuel Oil System,York Region original Spec,Included in ETO Spec,A11.21
+154,12,Furnishings,012345,Laboratory Casework and Equipment,York Region original Spec,Included in ETO Spec,A12.01
+155,13,SCADA and Instrumentation,013010,Process Control General Requirements,York Region original Spec,Included in ETO Spec,Included but not measured separately
+156,13,SCADA and Instrumentation,013050,SCADA Instrumentation and Control Documentation,York Region original Spec,Included in ETO Spec,Included but not measured separately
+157,13,SCADA and Instrumentation,013105,General Instrumentation Requirements,York Region original Spec,Included in ETO Spec,Included but not measured separately
+158,13,SCADA and Instrumentation,013110,Ultrasonic Level Transmitter,York Region original Spec,Included in ETO Spec,Included but not measured separately
+159,13,SCADA and Instrumentation,013120,Magnetic Flow Meters,York Region original Spec,Included in ETO Spec,Included but not measured separately
+160,13,SCADA and Instrumentation,013130,Float Switch,York Region original Spec,Included in ETO Spec,Included but not measured separately
+161,13,SCADA and Instrumentation,013140,Differential Pressure Transmitter,York Region original Spec,Included in ETO Spec,Included but not measured separately
+162,13,SCADA and Instrumentation,013150,Pressure Switch,York Region original Spec,Included in ETO Spec,Included but not measured separately
+163,13,SCADA and Instrumentation,013160,Temperature Transmitter,York Region original Spec,Included in ETO Spec,Included but not measured separately
+164,13,SCADA and Instrumentation,013170,Sludge Blanket Level,York Region original Spec,Included in ETO Spec,Included but not measured separately
+165,13,SCADA and Instrumentation,013180,Turbidity Analyzer,York Region original Spec,Included in ETO Spec,A13.01
+166,13,SCADA and Instrumentation,013185,pH and ORP Analyzer,York Region original Spec,Included in ETO Spec,Included but not measured separately
+167,13,SCADA and Instrumentation,013190,Gas Detector,York Region original Spec,Included in ETO Spec,Included but not measured separately
+168,13,SCADA and Instrumentation,013195,Chlorine Residual Analyzer,York Region original Spec,Included in ETO Spec,Included but not measured separately
+169,13,SCADA and Instrumentation,013200,Gauge Pressure Transmitter,York Region original Spec,Included in ETO Spec,Included but not measured separately
+170,13,SCADA and Instrumentation,013210,Fluoride Analyzer,York Region original Spec,Included in ETO Spec,Included but not measured separately
+171,13,SCADA and Instrumentation,013215,Chlorine Gas Detectors,York Region original Spec,Included in ETO Spec,Included but not measured separately
+172,13,SCADA and Instrumentation,013220,Dissolved Oxygen Analyzer,York Region original Spec,Included in ETO Spec,Included but not measured separately
+173,13,SCADA and Instrumentation,013230,Thermal Mass Flow Meters,York Region original Spec,Included in ETO Spec,Included but not measured separately
+174,13,SCADA and Instrumentation,013240,Ultrasonic Flow Meter,York Region original Spec,Included in ETO Spec,Included but not measured separately
+175,13,SCADA and Instrumentation,013250,Capacitance Level,York Region original Spec,Included in ETO Spec,Included but not measured separately
+176,13,SCADA and Instrumentation,013260,Bubbler Level Analyzer,York Region original Spec,Included in ETO Spec,Included but not measured separately
+177,13,SCADA and Instrumentation,013280,Weigh Scale,York Region original Spec,Included in ETO Spec,Included but not measured separately
+178,13,SCADA and Instrumentation,013285,Depth and Level Pressure Transmitter,York Region original Spec,Included in ETO Spec,Included but not measured separately
+179,13,SCADA and Instrumentation,013290,Conductive Level,York Region original Spec,Included in ETO Spec,Included but not measured separately
+180,13,SCADA and Instrumentation,013295,Suspended Solids,York Region original Spec,Included in ETO Spec,Included but not measured separately
+181,13,SCADA and Instrumentation,013305,Field Wiring,York Region original Spec,Included in ETO Spec,Included but not measured separately
+182,13,SCADA and Instrumentation,013310,Panel Specifications,York Region original Spec,Included in ETO Spec,Included but not measured separately
+183,13,SCADA and Instrumentation,013311,Panel - FAT Plan - Template,York Region original Spec,Included in ETO Spec,Included but not measured separately
+184,13,SCADA and Instrumentation,013390,Package Control Systems,York Region original Spec,Included in ETO Spec,Included but not measured separately
+185,13,SCADA and Instrumentation,013400,Programmable Automation Controllers,York Region original Spec,Included in ETO Spec,Included but not measured separately
+186,13,SCADA and Instrumentation,013510,PCS SCADA Local Area Network,York Region original Spec,Included in ETO Spec,Included but not measured separately
+187,13,SCADA and Instrumentation,13520A,SCADA 900MHz Wide Area Radio Network,York Region original Spec,Included in ETO Spec,Included but not measured separately
+188,13,SCADA and Instrumentation,13520B,SCADA 5 8GHz Wide Area Radio Network,York Region original Spec,Included in ETO Spec,Included but not measured separately
+189,13,SCADA and Instrumentation,013930,Instrument and Equipment Testing,York Region original Spec,Included in ETO Spec,Included but not measured separately
+190,13,SCADA and Instrumentation,28 00 00,Security System Specification,York Region original Spec,Included in ETO Spec,Included but not measured separately
+191,14,Conveying Systems,014620,Hoist Monorail and Lifting Davit Systems,York Region original Spec,Included in ETO Spec,A14.01
+192,14,Conveying Systems,14620-01,Hoist Monorail Data Sheet Hoist Monorail and Lifting Davit System,York Region original Spec,Included in ETO Spec,Included but not measured separately
+193,14,Conveying Systems,014630,Overhead Traveling Cranes,York Region original Spec,Included in ETO Spec,A14.02
+194,14,Conveying Systems,14630-01,Crane Data Sheet 96 Overhead Traveling Cranes,York Region original Spec,Included in ETO Spec,Included but not measured separately
+195,15,Mechanical,015010,Mechanical General Requirements,York Region original Spec,Included in ETO Spec,A15.01
+196,15,Mechanical,015075,Facilities Piping Identification,York Region original Spec,Included in ETO Spec,A15.02
+197,15,Mechanical,015080,Process Piping Insulation,York Region original Spec,Included in ETO Spec,A15.03
+198,15,Mechanical,015100,Plumbing Piping,York Region original Spec,Included in ETO Spec,A15.04
+199,15,Mechanical,15100-01,Polyvinyl Chloride Drain Waste and Vent,York Region original Spec,Included in ETO Spec,Included but not measured separately
+200,15,Mechanical,15100-02,Cast Iron Soil Pipe (CISP) and Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+201,15,Mechanical,15100-03,Acid-Resistant Cast Iron Pipe and Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+202,15,Mechanical,15100-05,Acid-Resistant Polypropylene Waste and Vent Pipe and Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+203,15,Mechanical,15100-06,Perforated Polyvinyl Chloride (Pvc) Pipe And Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+204,15,Mechanical,15100-07,High-Density Polyethylene (HDPE) Pipe And Fittings-Gas Service,York Region original Spec,Included in ETO Spec,Included but not measured separately
+205,15,Mechanical,15100-08,High Purity Polypropylene (Hp-Pp) Pipe And Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+206,15,Mechanical,15100-09,Carbon Steel Tubing And Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+207,15,Mechanical,15100-10,Galvanized Steel Drain And Vent Pipe And Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+208,15,Mechanical,015200,Process Piping and Fittings,York Region original Spec,Included in ETO Spec,A15.05
+209,15,Mechanical,15200-01,"Cement-Mortar, Glass And Asphaltic-Lined Ductile Iron",York Region original Spec,Included in ETO Spec,Included but not measured separately
+210,15,Mechanical,15200-02,Carbon Steel Pipe And Fittings-Special Service,York Region original Spec,Included in ETO Spec,Included but not measured separately
+211,15,Mechanical,15200-03,Carbon Steel Pipe And Fittings-General Service,York Region original Spec,Included in ETO Spec,Included but not measured separately
+212,15,Mechanical,15200-04,Welded Steel Pipe And Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+213,15,Mechanical,15200-05,"Glass Rubber And PP-Lined Pipe, Carbon Steel Pipe and Fittings",York Region original Spec,Included in ETO Spec,Included but not measured separately
+214,15,Mechanical,15200-06,PVFD-Lined Steel Pipe And Ductile Iron Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+215,15,Mechanical,15200-07,Galvanized Steel Pipe And Malleable Iron Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+216,15,Mechanical,15200-08,Stainless Steel Pipe And Fittings-General Service,York Region original Spec,Included in ETO Spec,Included but not measured separately
+217,15,Mechanical,15200-09,Stainless Steel Pipe And Fittings-Digester Gas Service,York Region original Spec,Included in ETO Spec,Included but not measured separately
+218,15,Mechanical,15200-10,Stainless Steel Pipe And Fittings-Special Service,York Region original Spec,Included in ETO Spec,Included but not measured separately
+219,15,Mechanical,15200-11,Polyvinyl Chloride (PVC) Pipe And Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+220,15,Mechanical,15200-12,Chlorinated Polyvinyl Chloride (CPVC) Pipe And Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+221,15,Mechanical,15200-13,Fiberglass Reinforced Plastic (Frp) Pipe And Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+222,15,Mechanical,15200-14,Copper And Copper Alloy Pipe Tubing And Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+223,15,Mechanical,15200-15,High Density Polyethylene (HDPE) Pipe And Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+224,15,Mechanical,15200-16,Double Wall Containment Piping,York Region original Spec,Included in ETO Spec,Included but not measured separately
+225,15,Mechanical,15200-17,PTFE-Lined Steel Pipe And Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+226,15,Mechanical,15200-18,Alloy 20 Pipe And Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+227,15,Mechanical,15200-19,Polyvinylidene Fluoride (PVDF) Pipe And Fittings,York Region original Spec,Included in ETO Spec,Included but not measured separately
+228,15,Mechanical,015201,Piping Support Systems,York Region original Spec,Included in ETO Spec,A15.06
+229,15,Mechanical,015204,Process Piping Specialties,York Region original Spec,Included in ETO Spec,A15.07
+230,15,Mechanical,015205,Process Valves and Operators,York Region original Spec,Included in ETO Spec,A15.08
+231,15,Mechanical,015208,Surge Control Systems (Water),York Region original Spec,Included in ETO Spec,A15.09
+232,15,Mechanical,015410,Plumbing Fixtures,York Region original Spec,Included in ETO Spec,A15.10
+233,15,Mechanical,015440,Plumbing Equipment,York Region original Spec,Included in ETO Spec,A15.11
+234,15,Mechanical,015500,Heat Generation,York Region original Spec,Included in ETO Spec,A15.12
+235,15,Mechanical,15500-01,Air Handling Unit,York Region original Spec,Included in ETO Spec,Included but not measured separately
+236,15,Mechanical,015730,Unitary Air-Conditioning Equipment =,York Region original Spec,Included in ETO Spec,Included but not measured separately
+237,15,Mechanical,15730-01,Split System DX Indoor Units =,York Region original Spec,Included in ETO Spec,Included but not measured separately
+238,15,Mechanical,15730-02,Ductless Split System DX Indoor Units,York Region original Spec,Included in ETO Spec,Included but not measured separately
+239,15,Mechanical,15730-03,Ductless Split System DX Outdoor Units,York Region original Spec,Included in ETO Spec,Included but not measured separately
+240,15,Mechanical,15730-04,Packaged Indoor Water Source Heat Pump Units,York Region original Spec,Included in ETO Spec,Included but not measured separately
+241,15,Mechanical,15730-05,Packaged Roofing Gas Unit DX AC Units,York Region original Spec,Included in ETO Spec,Included but not measured separately
+242,15,Mechanical,15730-06,Packaged DX Air Conditioning Units,York Region original Spec,Included in ETO Spec,Included but not measured separately
+243,15,Mechanical,15730-07,Room Air Conditioner,York Region original Spec,Included in ETO Spec,Included but not measured separately
+244,15,Mechanical,15730-08,Wall Mount Air Conditioner,York Region original Spec,Included in ETO Spec,Included but not measured separately
+245,15,Mechanical,15730-09,Packaged Terminal Air Conditioner,York Region original Spec,Included in ETO Spec,Included but not measured separately
+246,15,Mechanical,015760,Terminal Heat Transfer Units,York Region original Spec,Included in ETO Spec,A15.13
+247,15,Mechanical,15760-01,Hot Water Unit Heater,York Region original Spec,Included in ETO Spec,Included but not measured separately
+248,15,Mechanical,15760-02,Finned Tube Radiators,York Region original Spec,Included in ETO Spec,Included but not measured separately
+249,15,Mechanical,15760-03,Cabinet Unit Heater Schedule,York Region original Spec,Included in ETO Spec,Included but not measured separately
+250,15,Mechanical,15760-04,Electric Unit Heater,York Region original Spec,Included in ETO Spec,Included but not measured separately
+251,15,Mechanical,015810,Metal Ductwork and Accessories,York Region original Spec,Included in ETO Spec,A15.14
+252,15,Mechanical,15810-01,Ductwork Schedule,York Region original Spec,Included in ETO Spec,Included but not measured separately
+253,15,Mechanical,15810-02,Sound Attenuator Schedule,York Region original Spec,Included in ETO Spec,Included but not measured separately
+254,15,Mechanical,015830,Fans,York Region original Spec,Included in ETO Spec,Included but not measured separately
+255,15,Mechanical,15830-01,Fans,York Region original Spec,Included in ETO Spec,Included but not measured separately
+256,15,Mechanical,15830-02,Ceiling Fans,York Region original Spec,Included in ETO Spec,Included but not measured separately
+257,15,Mechanical,015950,HVAC Systems Testing Adjusting and Balancing,York Region original Spec,Included in ETO Spec,A15.15
+258,15,Mechanical,015955,Piping Leakage Testing,York Region original Spec,Included in ETO Spec,A15.16
+259,16,Electrical,016010,Electrical General Requirements,York Region original Spec,Included in ETO Spec,A16.01
+260,16,Electrical,016015,Electrical Systems Analysis,York Region original Spec,Included in ETO Spec,A16.02
+261,16,Electrical,016031,Inspection and Testing,York Region original Spec,Included in ETO Spec,Included but not measured separately
+262,16,Electrical,016032,Motor Control Centre Testing and Commissioning,York Region original Spec,Included in ETO Spec,Included but not measured separately
+263,16,Electrical,016050,Basic Materials and Methods,York Region original Spec,Included in ETO Spec,A16.03
+264,16,Electrical,016051,Installation of Cables in Trenches and Ducts,York Region original Spec,Included in ETO Spec,A16.04
+265,16,Electrical,016120,Wiring Systems,York Region original Spec,Included in ETO Spec,A16.05
+266,16,Electrical,016122,Wires and Cables 0-1000V,York Region original Spec,Included in ETO Spec,Included but not measured separately
+267,16,Electrical,016131,Splitters Junction Pull Boxes and Cabinets,York Region original Spec,Included in ETO Spec,A16.06
+268,16,Electrical,016132,Outlet Boxes Conduit Boxes and Fittings,York Region original Spec,Included in ETO Spec,A16.07
+269,16,Electrical,016133,Conduits Conduit Fastenings and Conduit Fittings,York Region original Spec,Included in ETO Spec,A16.08
+270,16,Electrical,016141,Wiring Devices,York Region original Spec,Included in ETO Spec,A16.09
+271,16,Electrical,016145,Modular Wiring System,York Region original Spec,Included in ETO Spec,Included but not measured separately
+272,16,Electrical,016221,Three Phase Induction Motors,York Region original Spec,Included in ETO Spec,A16.10
+273,16,Electrical,016222,Motors - 1 to 200kW 575V,York Region original Spec,Included in ETO Spec,A16.11
+274,16,Electrical,016223,Motor Starters Up To 600V,York Region original Spec,Included in ETO Spec,A16.12
+275,16,Electrical,016224,Variable Frequency Drives Up To 600V,York Region original Spec,Included in ETO Spec,A16.13
+276,16,Electrical,016225,Motor Control Centres,York Region original Spec,Included in ETO Spec,A16.14
+277,16,Electrical,016226,Reduced Voltage Soft Starters Up To 600V,York Region original Spec,Included in ETO Spec,A16.15
+278,16,Electrical,016231,Diesel Electric Generating Units (Liquid Cooled),York Region original Spec,Included in ETO Spec,A16.16
+279,16,Electrical,016233,Diesel Electric Generating Units Factory Test Results,York Region original Spec,Included in ETO Spec,A16.17
+280,16,Electrical,016234,Diesel Electronic Generating Units Information Form,York Region original Spec,Included in ETO Spec,A16.18
+281,16,Electrical,016261,Medium Voltage Reduced Voltage Soft Starters,York Region original Spec,Included in ETO Spec,A16.19
+282,16,Electrical,016262,Medium Voltage Variable Frequency Drives,York Region original Spec,Included in ETO Spec,A16.20
+283,16,Electrical,016271,Dry Type Tranformers up to 600 V Primary,York Region original Spec,Included in ETO Spec,A16.21
+284,16,Electrical,016276,Pad Mounted Distribution Tranformers,York Region original Spec,Included in ETO Spec,A16.22
+285,16,Electrical,016289,Transient Voltage Surge Suppression (TVSS),York Region original Spec,Included in ETO Spec,A16.23
+286,16,Electrical,016402,Service Entrance Board,York Region original Spec,Included in ETO Spec,Included but not measured separately
+287,16,Electrical,016411,Air Circuit Breakers,York Region original Spec,Included in ETO Spec,Included but not measured separately
+288,16,Electrical,016412,Molded Case Circuit Breakers,York Region original Spec,Included in ETO Spec,A16.24
+289,16,Electrical,016414,Disconnect Switches - Fused and Unfused,York Region original Spec,Included in ETO Spec,A16.25
+290,16,Electrical,016441,Panelboard Breaker Type,York Region original Spec,Included in ETO Spec,Included but not measured separately
+291,16,Electrical,016450,Grounding - Secondary,York Region original Spec,Included in ETO Spec,A16.26
+292,16,Electrical,016480,Grounding,York Region original Spec,Included in ETO Spec,A16.27
+293,16,Electrical,016496,Automatic Transfer Switches - Low Voltage,York Region original Spec,Included in ETO Spec,A16.28
+294,16,Electrical,016505,Lighting Equipment,York Region original Spec,Included in ETO Spec,A16.29
+295,16,Electrical,016670,Lightning Protection System,York Region original Spec,Included in ETO Spec,A16.30

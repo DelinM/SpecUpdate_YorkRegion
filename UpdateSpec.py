@@ -13,8 +13,10 @@ def updateSpec(spec_path, contractNo, date):
     word_dic = sysTools.getWordNames(folder_list)
 
     for key, values in word_dic.items():
+        print(key)
         folder = sysTools.checkResultPath("".join([key, 'Updated/']))
         for value in values:
             path = key + value
             name = folder + value
             wTools.update_wordInfo(path, contractNo, date, name)
+
