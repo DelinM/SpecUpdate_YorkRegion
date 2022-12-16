@@ -25,8 +25,8 @@ def getWordNames(filepath):
         word_dic[path] = word_files
     return word_dic
 
-def getFileNames(filepath):
 
+def getFileNames(filepath):
     file_dic = {}
     for path in filepath:
         files = os.listdir(path)
@@ -35,21 +35,23 @@ def getFileNames(filepath):
 
     return file_dic
 
+
 def checkResultPath(path):
     if not os.path.exists(path):
         # create directory
         os.makedirs(path)
     return path
 
+
 def getSpecNumber(file_name):
     result = ""
     length = len(file_name)
     for i in range(length):
         char = file_name[i]
-        if i < length -1 and char.isalpha() == True and file_name[i+1] == " ":
+        if i < length - 1 and char.isalpha() == True and file_name[i + 1] == " ":
             result = result + char
             continue
-        if i < length -1 and char == '-' and file_name[i+1] == " ":
+        if i < length - 1 and char == '-' and file_name[i + 1] == " ":
             result = result.strip()
             return result
         else:
@@ -60,6 +62,7 @@ def getSpecNumber(file_name):
                 result = result + char
     result = result.strip()
     return result
+
 
 def getSpecName(file_name, SpecNumber):
     file_name = file_name.replace(SpecNumber, "")

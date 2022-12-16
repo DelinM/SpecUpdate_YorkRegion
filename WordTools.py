@@ -1,6 +1,8 @@
 import docx
 from docx import Document
-import WordContentUpdate as wordu
+
+import SpecData as data
+import WordContent as wordu
 
 
 def getWordPaths(dic):
@@ -41,3 +43,5 @@ def update_wordInfo(wordPath, contractNo, date, name):
     file.close()
 
 
+def getDivName(number):
+    return data.div_dic.get(number)
