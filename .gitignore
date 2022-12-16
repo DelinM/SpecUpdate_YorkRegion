@@ -9,6 +9,9 @@ Spec/
 ETOSpec/
 YorkOriginal/
 
+
+# files/
+
 # C extensions
 *.so
 
@@ -20,6 +23,7 @@ dist/
 downloads/
 eggs/
 .eggs/
+..ipynb_checkpoints/
 lib/
 lib64/
 parts/
