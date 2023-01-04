@@ -3,10 +3,10 @@ from docx import Document
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 from docx.oxml import OxmlElement, ns
 from docx.shared import Pt
+import re
 
-import SpecData as data
-import SysTools
-import SysTools as sysTools
+from src import SpecData as data
+from src import SysTools
 
 """
 spec container: hashmap <String, list>
@@ -20,6 +20,8 @@ value 3: york_true (if this is an original york region spec) -> boolean
 value 4: eto_true (if ETO folder has this spec) -> boolean
 value 5: bid_true (should it included in Bid form) -> value
 """
+
+
 def create_element(name):
     # supporting function adding page
     return OxmlElement(name)
@@ -170,8 +172,8 @@ def update_evenpage_format(section):
 
 
 def update_ETOSpec(path):
-    folder_list = sysTools.getFolderNames(path)
-    file_dic = sysTools.getFileNames(folder_list)
+    folder_list = SysTools.getFolderNames(path)
+    file_dic = SysTools.getFileNames(folder_list)
     sorted_keys = sorted(file_dic.keys())
     file_dic = {key: file_dic[key] for key in sorted_keys}
     result_dic = data.yorkspec_dic
@@ -179,9 +181,7 @@ def update_ETOSpec(path):
     for division, specs in file_dic.items():
         n = 1
         specs.sort()
-        bid_form_code = "A"
-        # specs = specs.sort()
-        # p
+
         for spec in specs:
             if len(spec) == 0:
                 continue
@@ -189,13 +189,12 @@ def update_ETOSpec(path):
                 continue
 
             word_filepath = division + spec
-            key = sysTools.getSpecNumber(spec)
+            key = SysTools.getSpecNumber(spec)
 
             # initialize bid code number
-
             if key in result_dic:
                 spec_list = result_dic.get(key)
-                # value 4
+                # value 4 -
                 eto_true = True
                 spec_list[4] = eto_true
                 # value 5
@@ -217,7 +216,7 @@ def update_ETOSpec(path):
                 # value 1
                 div_name = data.div_dic.get(div_number)
                 # value 2
-                spec_name = sysTools.getSpecName(spec, key)
+                spec_name = SysTools.getSpecName(spec, key)
                 # value 3
                 york_true = False
                 # value 4
@@ -235,6 +234,82 @@ def update_ETOSpec(path):
                 spec_list = [div_number, div_name, spec_name, york_true, eto_true, bid_true]
                 result_dic[key] = spec_list
     return result_dic
+
+def get_ETOSpecSummary(path):
+    folder_list = SysTools.getFolderNames(path)
+    file_dic = SysTools.getFileNames(folder_list)
+    sorted_keys = sorted(file_dic.keys())
+    file_dic = {key: file_dic[key] for key in sorted_keys}
+    result_dic = data.yorkspec_dic
+
+    for division, specs in file_dic.items():
+        n = 1
+        specs.sort()
+
+        for spec in specs:
+            if len(spec) == 0:
+                continue
+            if len(spec) > 0 and spec[0].isalpha() == True:
+                continue
+
+            word_filepath = division + spec
+            key = SysTools.getSpecNumber(spec)
+
+            # initialize bid code number
+            if key in result_dic:
+                spec_list = result_dic.get(key)
+                # value 4 - eto-true
+                eto_true = True
+                spec_list[4] = eto_true
+                # value 5 - should it be included in bid form
+                bid_true = checkBid(word_filepath)
+                if bid_true > 0:
+                    spec_list[5] = get_BidNumber(word_filepath)
+                else:
+                    spec_list[5] = "Included but not measured separately"
+                result_dic[key] = spec_list
+            elif key not in result_dic:
+                div_fullname = division.split('/')[-2]
+                div_fullname = div_fullname.split(' ')
+                # value 0
+                div_number = div_fullname[1]
+                # value 1
+                div_name = data.div_dic.get(div_number)
+                # value 2
+                spec_name = SysTools.getSpecName(spec, key)
+                # value 3
+                york_true = False
+                # value 4
+                eto_true = True
+                # value 5
+                bid_true = checkBid(word_filepath)
+                if bid_true > 0:
+                    bid_true = get_BidNumber(word_filepath)
+                else:
+                    bid_true = "Included but not measured separately"
+                spec_list = [div_number, div_name, spec_name, york_true, eto_true, bid_true]
+                result_dic[key] = spec_list
+    return result_dic
+
+
+
+
+def get_BidNumber(path):
+    file = open(path, 'rb')
+    try:
+        # avoid file is not word doc.
+        document = Document(file)
+    except:
+        return
+
+    for paragraph in document.paragraphs:
+        result = re.search('A-Za-z]\d\d-\d\d', paragraph)
+        if result:
+            print(result.group(1))
+            return result.group(1)
+
+    return "Missing Bid Number."
+
 
 
 def checkBid(path):
@@ -306,9 +381,9 @@ def updateBid(path, bid_form_code, division, spec):
 
 
 def getYorkSpec():
-    path = "/Users/delinmu/Documents/GitHub/ETO_Specification/YorkOriginal"
-    folder_list = sysTools.getFolderNames(path)
-    file_dic = sysTools.getFileNames(folder_list)
+    path = "/YorkOriginal"
+    folder_list = SysTools.getFolderNames(path)
+    file_dic = SysTools.getFileNames(folder_list)
     sorted_keys = sorted(file_dic.keys())
     file_dic = {key: file_dic[key] for key in sorted_keys}
     spec_dic = {}
@@ -325,13 +400,13 @@ def getYorkSpec():
 
             if len(spec) > 0 and spec[0].isalpha() == True:
                 continue
-            key = sysTools.getSpecNumber(spec)
+            key = SysTools.getSpecNumber(spec)
             # value 0
             div_number = div_fullname[1]
             # value 1
             div_name = data.div_dic.get(div_number)
             # value 2
-            spec_name = sysTools.getSpecName(spec, key)
+            spec_name = SysTools.getSpecName(spec, key)
             # value 3
             york_true = True
             # value 4
@@ -346,7 +421,8 @@ def getYorkSpec():
 
 def get_ETOSpec_SummarySheets(path, result_path):
     result_dic = update_ETOSpec(path)
-    column_title = ['DivisionNumber', 'DivisionName', 'SpecNumber', 'SpecName', 'YorkSpecVersion', 'ETOSpecVersion','BidFormInformation']
+    column_title = ['DivisionNumber', 'DivisionName', 'SpecNumber', 'SpecName', 'YorkSpecVersion', 'ETOSpecVersion',
+                    'BidFormInformation']
     dataframe_list = []
     for key, list in result_dic.items():
         york_true = list[3]
@@ -379,9 +455,9 @@ def get_ETOSpec_SummarySheets(path, result_path):
         dataframe_list.append(list)
         print(list)
 
-    df = pd.DataFrame(dataframe_list, columns=column_title)
+    df = pd.DataFrame(dataframe_list, columns=column_title, dtype=str)
 
     if (result_path[-1] != '/'):
         result_path = result_path + '/'
 
-    df.to_csv(result_path + "result.csv", index=False)
+    df.to_excel(result_path + "result.xlsx", index=False)

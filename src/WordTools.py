@@ -1,8 +1,8 @@
 import docx
 from docx import Document
 
-import SpecData as data
-import WordContent as wordu
+from src import SpecData as data
+from src import WordContent as wordu
 
 
 def getWordPaths(dic):
