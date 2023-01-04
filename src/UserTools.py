@@ -1,5 +1,5 @@
 from src import WordTools as wTools
-from src.WordContent import get_ETOSpec_SummarySheets
+from src.WordContent import get_ETOSpecSummary
 from src import SysTools
 
 
@@ -16,4 +16,4 @@ def Update_Date_ContractNumber(spec_path, contractNo, date):
 
 
 def get_summarySheet(path, result_path):
-    get_ETOSpec_SummarySheets(path, result_path)
+    get_ETOSpecSummary(path, result_path)

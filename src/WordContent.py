@@ -1,9 +1,10 @@
+import re
+
 import pandas as pd
 from docx import Document
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 from docx.oxml import OxmlElement, ns
 from docx.shared import Pt
-import re
 
 from src import SpecData as data
 from src import SysTools
@@ -235,7 +236,8 @@ def update_ETOSpec(path):
                 result_dic[key] = spec_list
     return result_dic
 
-def get_ETOSpecSummary(path):
+
+def get_ETOSpec(path):
     folder_list = SysTools.getFolderNames(path)
     file_dic = SysTools.getFileNames(folder_list)
     sorted_keys = sorted(file_dic.keys())
@@ -283,15 +285,13 @@ def get_ETOSpecSummary(path):
                 eto_true = True
                 # value 5
                 bid_true = checkBid(word_filepath)
-                if bid_true > 0:
+                if bid_true is True:
                     bid_true = get_BidNumber(word_filepath)
                 else:
                     bid_true = "Included but not measured separately"
                 spec_list = [div_number, div_name, spec_name, york_true, eto_true, bid_true]
                 result_dic[key] = spec_list
     return result_dic
-
-
 
 
 def get_BidNumber(path):
@@ -303,13 +303,12 @@ def get_BidNumber(path):
         return
 
     for paragraph in document.paragraphs:
-        result = re.search('A-Za-z]\d\d-\d\d', paragraph)
+        result = re.search('A[0-1][0-7]\.\d\d', paragraph.text.upper())
         if result:
-            print(result.group(1))
-            return result.group(1)
+            print("match")
+            return result.group(0)
 
     return "Missing Bid Number."
-
 
 
 def checkBid(path):
@@ -419,8 +418,8 @@ def getYorkSpec():
     return spec_dic
 
 
-def get_ETOSpec_SummarySheets(path, result_path):
-    result_dic = update_ETOSpec(path)
+def get_ETOSpecSummary(path, result_path):
+    result_dic = get_ETOSpec(path)
     column_title = ['DivisionNumber', 'DivisionName', 'SpecNumber', 'SpecName', 'YorkSpecVersion', 'ETOSpecVersion',
                     'BidFormInformation']
     dataframe_list = []
