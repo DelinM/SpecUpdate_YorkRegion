@@ -305,9 +305,7 @@ def get_BidNumber(path):
     for paragraph in document.paragraphs:
         result = re.search('A[0-1][0-7]\.\d\d', paragraph.text.upper())
         if result:
-            print("match")
             return result.group(0)
-
     return "Missing Bid Number."
 
 
