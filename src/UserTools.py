@@ -1,9 +1,18 @@
+import pip
+
 from src import WordTools as wTools
 from src.WordContent import get_ETOSpecSummary
 from src import SysTools
 
 
 def Update_Date_ContractNumber(spec_path, contractNo, date):
+    try:
+        import docx
+    except ModuleNotFoundError:
+        print("module 'mutagen' is not installed")
+        # or
+        pip.main(['install', 'docx'])
+
     folder_list = SysTools.getFolderNames(spec_path)
     word_dic = SysTools.getWordNames(folder_list)
 
@@ -16,4 +25,10 @@ def Update_Date_ContractNumber(spec_path, contractNo, date):
 
 
 def get_summarySheet(path, result_path):
+    try:
+        import docx
+    except ModuleNotFoundError:
+        print("module 'mutagen' is not installed")
+        # or
+        pip.main(['install', 'docx'])
     get_ETOSpecSummary(path, result_path)
