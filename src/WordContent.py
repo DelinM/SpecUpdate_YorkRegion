@@ -1,5 +1,3 @@
-import re
-
 import pandas as pd
 from docx import Document
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
@@ -8,6 +6,7 @@ from docx.shared import Pt
 
 from src import SpecData as data
 from src import SysTools
+from src.WordFinder import get_BidNumber, checkBid, get_ReferenceSpec
 
 """
 spec container: hashmap <String, list>
@@ -172,6 +171,19 @@ def update_evenpage_format(section):
             run.font.size = Pt(11)
 
 
+def get_PageCount(path):
+    file = open(path, 'rb')
+    try:
+        # avoid file is not word doc.
+        document = Document(file)
+    except:
+        return -1
+
+    # if document.page_count > 0:
+    #     return document.page_count
+    return -1
+
+
 def update_ETOSpec(path):
     folder_list = SysTools.getFolderNames(path)
     file_dic = SysTools.getFileNames(folder_list)
@@ -212,15 +224,15 @@ def update_ETOSpec(path):
             elif key not in result_dic:
                 div_fullname = division.split('/')[-2]
                 div_fullname = div_fullname.split(' ')
-                # value 0
+                # value 0 - div number
                 div_number = div_fullname[1]
-                # value 1
+                # value 1 - div name
                 div_name = data.div_dic.get(div_number)
-                # value 2
+                # value 2 - spec name
                 spec_name = SysTools.getSpecName(spec, key)
-                # value 3
+                # value 3 - york region spec
                 york_true = False
-                # value 4
+                # value 4 - ETP included spec
                 eto_true = True
                 # value 5
                 bid_true = checkBid(word_filepath)
@@ -269,6 +281,24 @@ def get_ETOSpec(path):
                     spec_list[5] = get_BidNumber(word_filepath)
                 else:
                     spec_list[5] = "Included but not measured separately"
+
+                # value 6 - Reference List
+                list_reference = get_ReferenceSpec(word_filepath)
+                current_div = "Section " + spec_list[0]
+                if list_reference:
+                    if current_div in list_reference:
+                        list_reference.remove(current_div)
+
+                    if len(list_reference) > 0:
+                        spec_list.append('\n'.join(list_reference))
+                    else:
+                        spec_list.append("No Reference")
+                else:
+                    spec_list.append("No Reference")
+
+                # value 7 - Page
+                spec_list.append(get_PageCount(word_filepath))
+
                 result_dic[key] = spec_list
             elif key not in result_dic:
                 div_fullname = division.split('/')[-2]
@@ -289,39 +319,29 @@ def get_ETOSpec(path):
                     bid_true = get_BidNumber(word_filepath)
                 else:
                     bid_true = "Included but not measured separately"
-                spec_list = [div_number, div_name, spec_name, york_true, eto_true, bid_true]
+
+                # value 6
+                list_reference = get_ReferenceSpec(word_filepath)
+                current_div = "Section " + spec_list[0]
+                if list_reference:
+                    for item in list_reference:
+                        print(item)
+                    if current_div in list_reference:
+                        list_reference.remove(current_div)
+
+                    if len(list_reference) > 0:
+                        reference_spec = '\n'.join(list_reference)
+                    else:
+                        reference_spec = "No Reference"
+                else:
+                    reference_spec = "No Reference"
+
+                # value 7 - Page
+                page_num = get_PageCount(word_filepath)
+
+                spec_list = [div_number, div_name, spec_name, york_true, eto_true, bid_true, reference_spec, page_num]
                 result_dic[key] = spec_list
     return result_dic
-
-
-def get_BidNumber(path):
-    file = open(path, 'rb')
-    try:
-        # avoid file is not word doc.
-        document = Document(file)
-    except:
-        return
-
-    for paragraph in document.paragraphs:
-        result = re.search('A[0-1][0-7]\.\d\d', paragraph.text.upper())
-        if result:
-            return result.group(0)
-    return "Missing Bid Number."
-
-
-def checkBid(path):
-    file = open(path, 'rb')
-    try:
-        # avoid file is not word doc.
-        document = Document(file)
-    except:
-        return
-
-    for paragraph in document.paragraphs:
-        if "all costs" in paragraph.text.lower() and "bid form" in paragraph.text.lower():
-            file.close()
-            return 1
-    return -1
 
 
 def updateBid(path, bid_form_code, division, spec):
@@ -418,8 +438,7 @@ def getYorkSpec():
 
 def get_ETOSpecSummary(path, result_path):
     result_dic = get_ETOSpec(path)
-    column_title = ['DivisionNumber', 'DivisionName', 'SpecNumber', 'SpecName', 'YorkSpecVersion', 'ETOSpecVersion',
-                    'BidFormInformation']
+
     dataframe_list = []
     for key, list in result_dic.items():
         york_true = list[3]
@@ -449,12 +468,22 @@ def get_ETOSpecSummary(path, result_path):
         list[0] = DivisionNumber
         list[1] = DivisionName
         list[2] = str(SpecNumber.zfill(6))
-        dataframe_list.append(list)
-        print(list)
 
-    df = pd.DataFrame(dataframe_list, columns=column_title, dtype=str)
+        column_title = ['DivisionNumber', 'DivisionName', 'SpecNumber', 'SpecName', 'YorkSpecVersion', 'ETOSpecVersion',
+                        'MeasurementPayment', 'Reference_Spec', 'Page']
+
+        if len(list) == 11:
+            list.pop()
+            list.pop()
+
+        if len(list) == 7:
+            list.append("No Reference")
+            list.append(-1)
+
+        dataframe_list.append(list[0:8])
+
+    df = pd.DataFrame(dataframe_list, columns=column_title[0:8], dtype=str)
 
     if (result_path[-1] != '/'):
         result_path = result_path + '/'
-
     df.to_excel(result_path + "result.xlsx", index=False)
