@@ -277,7 +277,7 @@ def get_ETOSpec(path):
                 spec_list[4] = eto_true
                 # value 5 - should it be included in bid form
                 bid_true = checkBid(word_filepath)
-                if bid_true > 0:
+                if bid_true is True:
                     spec_list[5] = get_BidNumber(word_filepath)
                 else:
                     spec_list[5] = "Included but not measured separately"
